@@ -1,22 +1,43 @@
 {
-  "users": [
+    "users": [
       {
-          "id": 1,
-          "name": "Alice Johnson",
-          "country": "USA",
-          "message": "Looking for a penpal who loves to travel and explore new cultures."
+        "id": 1,
+        "username": "john_doe",
+        "email": "john.doe@example.com",
+        "password": "password123",
+        "avatar": "https://via.placeholder.com/150",
+        "age": 25,
+        "bio": "A lover of hiking and traveling the world!",
+        "interests": ["hiking", "photography", "languages"],
+        "languages": ["English", "Spanish"],
+        "location": "New York, USA",
+        "joinDate": "2024-01-15T00:00:00.000Z",
+        "lastActive": "2024-12-31T14:30:00.000Z",
+        "settings": {
+          "emailNotifications": true,
+          "privateProfile": false,
+          "theme": "light"
+        }
       },
       {
-          "id": 2,
-          "name": "Carlos Ruiz",
-          "country": "Mexico",
-          "message": "I enjoy reading and writing letters to make new friends from different parts of the world."
-      },
-      {
-          "id": 3,
-          "name": "Mia Zhang",
-          "country": "China",
-          "message": "Hoping to connect with someone who shares a passion for photography and nature."
+        "id": 2,
+        "username": "jane_doe",
+        "email": "jane.doe@example.com",
+        "password": "password123",
+        "avatar": "https://via.placeholder.com/150",
+        "age": 23,
+        "bio": "Enjoys reading and exploring new cities.",
+        "interests": ["reading", "travel", "cooking"],
+        "languages": ["English", "French"],
+        "location": "Paris, France",
+        "joinDate": "2024-02-01T00:00:00.000Z",
+        "lastActive": "2024-12-31T15:45:00.000Z",
+        "settings": {
+          "emailNotifications": true,
+          "privateProfile": true,
+          "theme": "dark"
+        }
       }
-  ]
-}
+    ]
+  }
+  
