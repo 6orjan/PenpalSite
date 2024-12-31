@@ -1,0 +1,22 @@
+{
+  "users": [
+      {
+          "id": 1,
+          "name": "Alice Johnson",
+          "country": "USA",
+          "message": "Looking for a penpal who loves to travel and explore new cultures."
+      },
+      {
+          "id": 2,
+          "name": "Carlos Ruiz",
+          "country": "Mexico",
+          "message": "I enjoy reading and writing letters to make new friends from different parts of the world."
+      },
+      {
+          "id": 3,
+          "name": "Mia Zhang",
+          "country": "China",
+          "message": "Hoping to connect with someone who shares a passion for photography and nature."
+      }
+  ]
+}
