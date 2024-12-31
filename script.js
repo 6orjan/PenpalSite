@@ -1,4 +1,4 @@
-// Define routes
+
 const routes = {
     home: () => `
         <h2>Welcome to Penpal World!</h2>
@@ -24,7 +24,7 @@ const routes = {
     `,
 };
 
-// Handle routing
+
 const navigateTo = (route) => {
     const content = document.getElementById('main-content');
     content.innerHTML = routes[route] ? routes[route]() : 'Page not found.';
@@ -38,8 +38,7 @@ const navigateTo = (route) => {
     window.history.pushState({}, route, `#${route}`);
 };
 
-// Fetch penpals from the backend
-// Fetch penpals from the backend
+
 const fetchPenpals = () => {
     fetch('http://localhost:5001/users')
         .then((response) => {
@@ -75,7 +74,7 @@ const fetchPenpals = () => {
 };
 
 
-// Setup form validation and submission for contact form
+
 const setupContactForm = () => {
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', (e) => {
@@ -95,7 +94,7 @@ const setupContactForm = () => {
     });
 };
 
-// Listen to route changes
+
 document.querySelectorAll('a[data-route]').forEach((link) => {
     link.addEventListener('click', (event) => {
         event.preventDefault();
@@ -104,11 +103,10 @@ document.querySelectorAll('a[data-route]').forEach((link) => {
     });
 });
 
-// Initial load and route change
+
 const initialRoute = window.location.hash.replace('#', '') || 'home';
 navigateTo(initialRoute);
 
-// Popstate event listener for back/forward navigation
 window.addEventListener('popstate', () => {
     const route = window.location.hash.replace('#', '') || 'home';
     navigateTo(route);
